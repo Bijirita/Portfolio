@@ -6,6 +6,7 @@
 }
 
 .nav {
+    -webkit-font-smoothing: antialiased;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +15,7 @@
     background: black;
     font-size: 32px;
 }
-.nav>div {
+.nav > div {
     width: 70px;
 }
 
@@ -42,30 +43,29 @@
     transition: color, linear, .5s;     
 }
 
-.flexGrid {
+.description {
+    display: flex;
     height: 100%;
     width: 50%;
+    color: white;
     background: #333;
 }
 
-.flex-grid-dubs {
+.aboutme {
     display: flex;
-    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-.flex-grid-dubs .col {
-    display: flex;
-    background-size: cover;
-    width: 20px;
-    height: 20px;
+.aboutme p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px;
 }
-
-.one {
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-
 
 /* Hovers  */
 
