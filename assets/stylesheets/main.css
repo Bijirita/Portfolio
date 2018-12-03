@@ -1,28 +1,56 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
 .flexContainer {
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background: black;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-grow: 1;
+    order: 1;
+    flex-direction: column;
 }
 
 .nav {
     -webkit-font-smoothing: antialiased;
     display: flex;
+    align-content: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     height: 100%;
     background: black;
     font-size: 32px;
+    flex-shrink: 0;
+    position: fixed;
 }
+
 .nav > div {
     width: 70px;
 }
 
 .splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    margin-left: 70px;
     height: 100%;
-    width: 50%;
     background: #222;
+    flex-grow: 1;
 }
 
 .splash h1 {
@@ -45,17 +73,29 @@
 
 .description {
     display: flex;
+    margin-left: 70px;
+
     height: 100%;
-    width: 50%;
+    width: 100%;
     color: white;
     background: #333;
+    flex-grow: 1;
+    order: 2;
+}
+
+.sticky {
+    background: blue;
+    width: 50%;
 }
 
 .aboutme {
     display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background: green;
+
 }
 
 .aboutme p {
@@ -65,6 +105,7 @@
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 24px;
+    
 }
 
 /* Hovers  */
