@@ -3,7 +3,6 @@ var defaultInput = "rgba(10, 180, 180, 1)";
 
 function nameValidation(nameInput) {
     var name = document.getElementById("name");
-    var issueArr = [];
     if (/[-!@#$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/.test(nameInput)) {
         name.setCustomValidity("No special characters!");
         name.style.borderColor = alertRedInput;
@@ -14,10 +13,20 @@ function nameValidation(nameInput) {
     }
 }
 
-function validateEmail(emailInput) {
-    var email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return email.test(String(emailInput).toLowerCase());
-}
+// function ValidateEmail(inputEmail) {
+//     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+//     if(inputEmail.value.match(mailformat)) {
+//         document.form1.text1.focus();
+//         return true;
+//     }
+//     else {
+//         alert("You have entered an invalid email address!");
+//         document.form1.text1.focus();
+//         return false;
+//     }
+// }
+
 
 function emailValidation(emailInput) {
     var email= document.getElementById("email");

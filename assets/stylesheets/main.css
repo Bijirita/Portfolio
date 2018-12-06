@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 html {
     height: 100%;
 }
@@ -54,12 +59,12 @@ body {
 }
 
 .splash h1 {
-    font-size: 32px;
+    font-size: 48px;
     color: #08fdd8;
 }
 
 .splash p {
-    font-size: 12px;
+    font-size: 18px;
     color: white;
 }
 
@@ -134,7 +139,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: green;
+    background: #222;
 
 }
 
@@ -160,6 +165,114 @@ body {
 @keyframes hoverGlow {
 
 }
+
+/*=======Contact Form==================*/
+
+.contactArea {
+    background: #222;
+    width: 100%;
+    height: 100%;
+    margin-left: 70px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    order: 3;
+}
+
+.contactSection {
+    font-family: "Open sans";
+    background: url("../images/bioinf.jpg");
+    background-position: center;
+    width: 800px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    color: #08fdd8;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+    margin: 0 auto 0 auto;
+  }
+  
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 45%;
+    background: rgba(20, 20, 20, .7);
+    border-right: 5px solid rgba(30, 30, 30, .8);
+}
+  
+.contactSection h2 {
+    padding-top: 20px;
+    font-weight: 300;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.contactSection p {
+    font-size: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.icon {
+    font-size: 8em;
+    padding: 18px 0;
+    color: rgba(10, 180, 180, 1);
+}
+  
+.contactForm {
+    width: 70%;
+    background: rgba(20, 40, 40, .7);
+    transition: .2s;
+}
+  
+.contactForm h2 {
+    font-weight: 300;
+}
+  
+.inputFields {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, .6);
+    color: white;
+    resize: none;
+}
+  
+.noBullet {
+    list-style-type: none;
+    padding: 0;
+}
+  
+#submit {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, .6);
+    font-size: 18px;
+    color: white;
+    margin-top: 16px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+  
+#submit:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+}
+  
+
 
 
 /* splashpage */
